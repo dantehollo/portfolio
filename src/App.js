@@ -1,17 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Slider from "react-slick";
-// import "./index.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Hero from './components/Hero';
+import "./index.css";
 
-export default class ReactSlickDemo extends React.Component {
-  render() {
-    
+class App extends React.Component {
+  render() {   
     return (
       <div>
-        
+        <Hero/>
       </div>
-    );
+    )
   }
 }
 
-// ReactDOM.render(<ReactSlickDemo />, document.getElementById("container"));
+export default App;
