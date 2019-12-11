@@ -4,6 +4,7 @@ import './App.css';
 import Hero from './components/Hero';
 import Header from './components/Header';
 import About from './components/About'
+import Skills from './components/Skills'
 
 class App extends React.Component {
   render() {   
@@ -12,7 +13,7 @@ class App extends React.Component {
         <Header/>
         <Hero/>
         <About/>
-        {/* <Skills/> */}
+        <Skills/>
         {/* <Footer */}
       </div>
     )

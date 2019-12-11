@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Carousel} from 'react-bootstrap'
 import logoMajor from './images/logos-20191211T134219Z-001/logos/logo-major-case.svg'
+import projOne from './images/project-images/Screenshot from 2019-12-11 09-20-53.png'
+import projFour from './images/project-images/Screenshot from 2019-12-11 09-54-40.png'
 
 export default class Hero extends Component {
   render(){
@@ -21,7 +23,7 @@ export default class Hero extends Component {
       <Carousel.Item>
         <img
           className="image"
-          src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png"
+            src={projOne}
           alt="Third slide"
         />
     
@@ -34,6 +36,18 @@ export default class Hero extends Component {
         <img
           className="image"
           src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png"
+          alt="Third slide"
+        />
+    
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="image"
+          src={projFour}
           alt="Third slide"
         />
     
