@@ -1,4 +1,8 @@
 import React, {Component} from 'react'
+import github from './images/Favorites/icons8-github-100.png'
+import linkedin from './images/Favorites/icons8-linkedin-100.png'
+import logoWhite from './images/logos-20191211T134219Z-001/logos/personal-logo-white.png'
+
 
 export default class Header extends Component {
 
@@ -6,10 +10,10 @@ export default class Header extends Component {
         return(
             <header className='header'>
                 <div className='logo-container'>
-                    <img src='' />
+                    <img src={logoWhite} className='logo-image'/>
                 </div>
-                <nav>
-                <div className='nav-button'>
+                <nav className='nav-container'>
+                    <div className='nav-button'>
                         <h3>
                             About
                         </h3>
@@ -24,11 +28,11 @@ export default class Header extends Component {
                             Work
                         </h3>
                     </div>
-                    <div className='nav-button'>
-                        <img src='src/images/Favorites/icons8-github-100.png' href=''/>
+                    <div>
+                        <img src={github}  alt='octocat' href='https://github.com/dantehollo?tab=repositories' className='nav-image'/>
                     </div>
-                    <div className='nav-button'>
-                        <img src='' href=''/>
+                    <div>
+                        <img src={linkedin} href='https://www.linkedin.com/in/matthew-caravaggio/' alt='linkedin' className='nav-image'/>
                     </div>
                 </nav>
             </header>

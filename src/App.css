@@ -1,10 +1,30 @@
 /* Global */
-.wrapper {
+body {
   background-color: black;
 }
 
 /* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 
+.nav-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-button {
+  width: 75px;
+}
+
+.nav-button h3 {
+  font-size: 20px;
+}
+
+.nav-image {
+  width: 50px;
+}
 
 /* Hero Styles */
 .image {
@@ -12,7 +32,9 @@
 }
 
 /* About Styles */
-
+.portrait {
+  width: 500px;
+}
 
 /* Skills Styles */
 

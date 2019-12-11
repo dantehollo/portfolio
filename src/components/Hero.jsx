@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Carousel} from 'react-bootstrap'
+import logoMajor from './images/logos-20191211T134219Z-001/logos/logo-major-case.svg'
 
 export default class Hero extends Component {
   render(){
@@ -9,7 +10,7 @@ export default class Hero extends Component {
       <Carousel.Item>
         <img
           className="image"
-          src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png"
+          src={logoMajor}
           alt="First slide"
         />
         <Carousel.Caption>

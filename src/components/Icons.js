@@ -1,40 +1,59 @@
+import illustrator from './images/Favorites/icons8-adobe-illustrator-100.png'
+import indesign from './images/Favorites/icons8-adobe-indesign-100.png'
+import photoshop from './images/Favorites/icons8-adobe-photoshop-100.png'
+import css3 from './images/Favorites/icons8-css3-100.png'
+import git from './images/Favorites/icons8-git-100.png'
+import html5 from './images/Favorites/icons8-html-5-100.png'
+import mongoDB from './images/Favorites/icons8-mongodb-96.png'
+import node from './images/Favorites/icons8-node-js-100.png'
+import npm from './images/Favorites/icons8-npm-100.png'
+import postgresql from './images/Favorites/icons8-postgresql-100.png'
+import python from './images/Favorites/icons8-python-100.png'
+import react from './images/Favorites/icons8-react-native-100.png'
+
 const icon = [
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {illustrator}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {indesign}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {photoshop}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {css3}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {git}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {html5}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {npm}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {postgresql}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {python}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {react}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
+        source: {javascript}
     },
     {
-        source: 'src/images/Favorites/icons8-adobe-illustrator-100.png'
-    }
+        source: {node}
+    },
+    {
+        source: {node}
+    },
+    {
+        source: {mongoDB}
+    },
 ]
 
 export { icon }
