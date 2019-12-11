@@ -8,7 +8,7 @@ export default class Hero extends Component {
       <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="image"
           src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png"
           alt="First slide"
         />
@@ -19,7 +19,7 @@ export default class Hero extends Component {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="image"
           src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png"
           alt="Third slide"
         />
@@ -31,7 +31,7 @@ export default class Hero extends Component {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="image"
           src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png"
           alt="Third slide"
         />

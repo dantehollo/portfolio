@@ -4,7 +4,7 @@ export default class Header extends Component {
 
     render(){
         return(
-            <header>
+            <header className='header'>
                 <div className='logo-container'>
                     <img src='' />
                 </div>
@@ -25,7 +25,7 @@ export default class Header extends Component {
                         </h3>
                     </div>
                     <div className='nav-button'>
-                        <img src='' href=''/>
+                        <img src='src/images/Favorites/icons8-github-100.png' href=''/>
                     </div>
                     <div className='nav-button'>
                         <img src='' href=''/>
