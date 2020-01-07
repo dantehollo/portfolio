@@ -10,14 +10,16 @@ export default class Hero extends Component {
     return(
       <Carousel>
       <Carousel.Item>
-        <img
-          className="image"
-          src={logoMajor}
-          alt="First slide"
-        />
+        <div class="full-size">
+          {/* <img
+            className="image"
+            src={logoMajor}
+            alt="First slide"
+          /> */}
+        </div>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Welcome</h3>
+          <p>Slide right to see some of my work</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -28,8 +30,8 @@ export default class Hero extends Component {
         />
     
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Blackjack</h3>
+          <p>Vanilla Javascript web application of the classic game of 21.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

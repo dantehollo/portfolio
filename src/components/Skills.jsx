@@ -17,49 +17,63 @@ export default class Skills extends Component {
     render() {
         return(
             <div className='skills-container'>
+                <h1>Skills</h1>
                 <div className='skills-row'>
-                    <div>
+                    <div className='image-container'>
                         <img src={react} className='skill-image'/>
+                        <p className='icon-name'>React</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={javascript} className='skill-image'/>
+                        <p className='icon-name'>JavaScript</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={python} className='skill-image'/>
+                        <p className='icon-name'>Python</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={mongoDB} className='skill-image'/>
+                        <p className='icon-name'>MongoDB</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={node} className='skill-image'/>
+                        <p className='icon-name'>Node</p>
                     </div>
                 </div>
                 <div className='skills-row'>
-                    <div>
+                    <div className='image-container'>
                         <img src={npm} className='skill-image'/>
+                        <p className='icon-name'>NPM</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={postgresql} className='skill-image'/>
+                        <p className='icon-name'>Postgresql</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={git} className='skill-image'/>
+                        <p className='icon-name'>Git</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={html5} className='skill-image'/>
+                        <p className='icon-name'>HTML5</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={css3} className='skill-image'/>
+                        <p className='icon-name'>CSS3</p>
                     </div>
                 </div>
                 <div className='skills-row'>
-                    <div>
+                    <div className='image-container'>
                         <img src={illustrator} className='skill-image'/>
+                        <p className='icon-name'>Illustrator</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={photoshop} className='skill-image'/>
+                        <p className='icon-name'>Photoshop</p>
                     </div>
-                    <div>
+                    <div className='image-container'>
                         <img src={indesign} className='skill-image'/>
+                        <p className='icon-name'>InDesign</p>
                     </div>
                 </div>
             </div>
