@@ -9,7 +9,7 @@ export default class Hero extends Component {
   render(){
     return(
       <div className="full-size">
-        {/* <img className="bg-image" src="https://media.giphy.com/media/v3Re0vP4CBz68/giphy.gif" alt=""/> */}
+        <h1>Welcome</h1>
       </div>
     )
   }

@@ -49,35 +49,36 @@ html, body {
   height: 100%;
 }
 
-#root {
-  height: 100%;
-}
-
-.one-hundred {
-  height: 100%;
-}
-
 /* Global */
 .wrapper {
   width: 1250px;
   margin: 0 auto;
-
 }
 
 /* Header Styles */
 .header {
-  /* position: fixed; */
+  position: fixed;
   top: 0px;
-  margin:auto; 
+  margin: 0 auto;
   z-index:100000; 
   width:100%;
+  background-color: black;
+}
+
+#header-wrapper {
+  width: 1250px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
 .nav-container{
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  margin: 0 5px;
 }
 
 .nav-button {
@@ -104,12 +105,25 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  font-weight: 750;
 }
 
 .bg-image {
   height: 100%;
   position: relative;
   object-fit: cover;
+}
+
+#root {
+  height: 100%;
+}
+
+.one-hundred {
+  height: 100%;
 }
 
 /* About Styles */

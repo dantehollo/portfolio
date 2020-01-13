@@ -13,8 +13,8 @@ class App extends React.Component {
         <Header/>
         <Hero/>
         <div className='wrapper'>
-          <About/>
           <Skills/>
+          <About/>
         </div>
       </div>
     )

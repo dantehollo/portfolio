@@ -8,17 +8,21 @@ export default class Header extends Component {
 
     render(){
         return(
-            <div class="wrapper">
-                <header className='header'>
+            <div className="header">
+                <header id='header-wrapper'>
                     <div className='logo-container'>
                         <img src={logoWhite} className='logo-image'/>
                     </div>
                     <nav className='nav-container'>
-                        <div>
-                            <img src={github}  alt='octocat' href='https://github.com/dantehollo?tab=repositories' className='nav-image'/>
+                        <div className="nav-links">
+                            <a href="https://github.com/dantehollo">
+                                <img src={github}  alt='octocat' href='https://github.com/dantehollo?tab=repositories' className='nav-image'/>
+                            </a>
                         </div>
-                        <div>
-                            <img src={linkedin} href='https://www.linkedin.com/in/matthew-caravaggio/' alt='linkedin' className='nav-image'/>
+                        <div className="nav-links">
+                            <a href="https://www.linkedin.com/in/matthew-caravaggio/">
+                                <img src={linkedin} href='https://www.linkedin.com/in/matthew-caravaggio/' alt='linkedin' className='nav-image'/>
+                            </a>
                         </div>
                     </nav>
                 </header>
