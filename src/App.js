@@ -9,13 +9,12 @@ import Skills from './components/Skills'
 class App extends React.Component {
   render() {   
     return (
-      <div className="reset">
+      <div className="one-hundred">
         <Header/>
         <Hero/>
         <div className='wrapper'>
           <About/>
           <Skills/>
-          {/* <Footer */}
         </div>
       </div>
     )

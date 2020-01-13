@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import github from './images/Favorites/icons8-github-100.png'
 import linkedin from './images/Favorites/icons8-linkedin-100.png'
-import logoWhite from './images/logos-20191211T134219Z-001/logos/personal-logo-white.png'
+import logoWhite from './images/logos/logos/personal-logo-white.png'
 
 
 export default class Header extends Component {
