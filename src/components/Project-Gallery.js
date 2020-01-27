@@ -16,8 +16,28 @@ const devGallery = [
 
 const desGallery = [
     {
-        title: "Blackjack",
-        image: blackjack_image,
+        title: "Kerrits",
+        image: kerrits_image,
         description: "Placeholder Text"   
-    }
+    },
+    {
+        title: "North Cascades Community Church",
+        image: nccf_image,
+        description: "Placeholder Text"   
+    },
+    {
+        title: "Adventure Quest",
+        image: adventureQuest_image,
+        description: "Placeholder Text"   
+    },
+    {
+        title: "League Titans",
+        image: leagueTitans_image,
+        description: "Placeholder Text"   
+    },
+    {
+        title: "The Clark College Phoenix",
+        image: phoenix_image,
+        description: "Placeholder Text"   
+    },
 ]
