@@ -3,15 +3,15 @@ import designProjects from 'Design'
 
 export default class Projects extends Component {
     render() {
-        const designProjects = designProjects.map((project, index) => {
+        const design = designProjects.map((project, index) => {
             return <div
                 title={project.title}
                 image={project.image}
                 description={project.description}
                 key={index}>
-                <h2>{title}</h2>
-                <img scr={image} alt="and image of a project"/>
-                <p>{description}</p>
+                <h2>{this.title}</h2>
+                <img scr={this.image} alt="and image of a project"/>
+                <p>{this.description}</p>
             </div>
         })
 
@@ -26,7 +26,7 @@ export default class Projects extends Component {
                     </div>
                 </div>
                 <div className="proj-image">
-                    {designProjects}
+                    {design}
                 </div>
             </div>
         )

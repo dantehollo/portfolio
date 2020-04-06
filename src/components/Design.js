@@ -32,4 +32,4 @@ const designProjects = [
     }
 ]
 
-export default designProjects
+export default {designProjects}
