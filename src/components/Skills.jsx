@@ -20,59 +20,59 @@ export default class Skills extends Component {
                 <h1>Skills</h1>
                 <div className='skills-row'>
                     <div className='image-container'>
-                        <img src={react} className='skill-image'/>
+                        <img src={react} className='skill-image' alt=""/>
                         <p className='icon-name'>React</p>
                     </div>
                     <div className='image-container'>
-                        <img src={javascript} className='skill-image'/>
+                        <img src={javascript} className='skill-image' alt=""/>
                         <p className='icon-name'>JavaScript</p>
                     </div>
                     <div className='image-container'>
-                        <img src={python} className='skill-image'/>
+                        <img src={python} className='skill-image' alt=""/>
                         <p className='icon-name'>Python</p>
                     </div>
                     <div className='image-container'>
-                        <img src={mongoDB} className='skill-image'/>
+                        <img src={mongoDB} className='skill-image' alt=""/>
                         <p className='icon-name'>MongoDB</p>
                     </div>
                     <div className='image-container'>
-                        <img src={node} className='skill-image'/>
+                        <img src={node} className='skill-image' alt=""/>
                         <p className='icon-name'>Node</p>
                     </div>
                 </div>
                 <div className='skills-row'>
                     <div className='image-container'>
-                        <img src={npm} className='skill-image'/>
+                        <img src={npm} className='skill-image' alt=""/>
                         <p className='icon-name'>NPM</p>
                     </div>
                     <div className='image-container'>
-                        <img src={postgresql} className='skill-image'/>
+                        <img src={postgresql} className='skill-image' alt=""/>
                         <p className='icon-name'>Postgresql</p>
                     </div>
                     <div className='image-container'>
-                        <img src={git} className='skill-image'/>
+                        <img src={git} className='skill-image' alt=""/>
                         <p className='icon-name'>Git</p>
                     </div>
                     <div className='image-container'>
-                        <img src={html5} className='skill-image'/>
+                        <img src={html5} className='skill-image' alt=""/>
                         <p className='icon-name'>HTML5</p>
                     </div>
                     <div className='image-container'>
-                        <img src={css3} className='skill-image'/>
+                        <img src={css3} className='skill-image' alt=""/>
                         <p className='icon-name'>CSS3</p>
                     </div>
                 </div>
                 <div className='skills-row'>
                     <div className='image-container'>
-                        <img src={illustrator} className='skill-image'/>
+                        <img src={illustrator} className='skill-image' alt=""/>
                         <p className='icon-name'>Illustrator</p>
                     </div>
                     <div className='image-container'>
-                        <img src={photoshop} className='skill-image'/>
+                        <img src={photoshop} className='skill-image' alt=""/>
                         <p className='icon-name'>Photoshop</p>
                     </div>
                     <div className='image-container'>
-                        <img src={indesign} className='skill-image'/>
+                        <img src={indesign} className='skill-image' alt=""/>
                         <p className='icon-name'>InDesign</p>
                     </div>
                 </div>

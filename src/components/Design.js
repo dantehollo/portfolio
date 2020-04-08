@@ -7,29 +7,29 @@ import nccf from './images/project-images/Design/nccf1.jpg'
 const designProjects = [
     {
         title: "League Titans",
-        image: leagueTitans,
+        source: leagueTitans,
         description: "League Titans Description"
     },
     {
         title: "Kerrits",
-        image: kerrits,
+        source: kerrits,
         description: "Kerrits Description"
     },
     {
         title: "Adventure Craft",
-        image: adventureCraft,
+        source: adventureCraft,
         description: "Adventure Craft Description"
     },
     {
         title: "Pacific Stormwater Consulting",
-        image: psc,
+        source: psc,
         description: "Pacidic Stormwater Consulting Description"
     },
     {
         title: "North Cascades Christian Fellowship",
-        image: nccf,
+        source: nccf,
         description: "North Cascade Christian Fellowship Description"
     }
 ]
 
-export default {designProjects}
+export {designProjects}
