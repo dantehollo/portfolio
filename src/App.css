@@ -127,12 +127,8 @@ html, body {
 }
 
 /* About Styles */
-.three-column {
-  display: flex;
-}
-
-.portrait {
-  width: 500px;
+.about {
+  background-image: url(components/images/portraits/me.jpg);
 }
 
 /* Skills Styles */

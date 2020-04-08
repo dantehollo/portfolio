@@ -32,6 +32,8 @@ export default class Projects extends Component {
             </div>
         })
 
+        // onClick make the opposite gallery hidden and the active galery visible
+
         return(
             <div>
                 <div className="proj-nav">
