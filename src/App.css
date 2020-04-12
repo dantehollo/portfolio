@@ -129,7 +129,32 @@ html, body {
 /* About Styles */
 .about {
   background-image: url(components/images/portraits/me.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 10%;
 }
+
+.about-text-box {
+  /* height: 25%; */
+  width: 50%;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  margin: 10px 0px 20px 0px;
+}
+
+.about-paragraph {
+  /* position: relative;
+  top: 20%;
+  left: 50%; */
+  margin: 10px 0px 20px 0px;
+}
+
+/* .about-heading {
+  position: relative;
+  top: 20%;
+} */
 
 /* Skills Styles */
 .skills-row {
