@@ -145,9 +145,6 @@ html, body {
 }
 
 .about-paragraph {
-  /* position: relative;
-  top: 20%;
-  left: 50%; */
   margin: 10px 0px 20px 0px;
 }
 
@@ -221,4 +218,13 @@ html, body {
   /* border-radius: 7.5px; */
   padding: 5px 15px;
 }
+
+#proj-designer-gallery-box {
+  display: block;
+}
+
+#proj-developer-gallery-box {
+  display: none;
+}
+
 /* Footer Styles */

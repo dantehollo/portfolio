@@ -3,6 +3,15 @@ import {designProjects} from '../components/Design'
 import {developerProjects} from '../components/Developer'
 
 export default class Projects extends Component {
+    // create state
+    constructor(props) {
+        super(props)
+        this.state = {
+            developerGalleryIsHidden: false,
+            designerGalleryIsHidden: true
+        }
+    }
+
     render() {
         const design = designProjects.map((project, index) => {
             return <div
@@ -32,21 +41,38 @@ export default class Projects extends Component {
             </div>
         })
 
-        // onClick make the opposite gallery hidden and the active galery visible
-
+        const toggleDeveloper = (e) => {
+            e.preventDefault()
+            if(this.state.developerGalleryIsHidden === true) {
+                console.log(this.state.developerGalleryIsHidden)
+                document.getElementById("proj-developer-gallery-box").style.display = "block"
+                document.getElementById("proj-designer-gallery-box").style.display = "none"
+                this.setState({developerGalleryIsHidden: !this.state.developerGalleryIsHidden})
+            }
+        }
+    
+        const toggleDesigner = (e) => {
+            e.preventDefault()
+            if(this.state.designerGalleryIsHidden === true) {
+                document.getElementById("proj-designer-gallery-box").style.display = "block"
+                document.getElementById("proj-developer-gallery-box").style.display = "none"
+                this.state.designerGalleryIsHidden = !this.state.designerGalleryIsHidden
+            }
+        }
+        
         return(
             <div>
                 <div className="proj-nav">
                     <div className="proj-tabs">
-                        <h2 className="tab-name">Developer</h2>
-                        <h2 className="tab-name">Designer</h2>
+                        <a href="#" onClick={toggleDeveloper}><h2 className="tab-name">Developer</h2></a>
+                        <a href="#" onClick={toggleDesigner}><h2 className="tab-name">Designer</h2></a>
                     </div>
                 </div>
                 <div className="proj-gallery-box">
-                    <div className="proj-designer-gallery-box">
+                    <div id="proj-designer-gallery-box">
                         {design}
                     </div>
-                    <div className="proj-developer-gallery-box">
+                    <div id="proj-developer-gallery-box">
                         {developer}
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import React, {Component} from 'react'
 export default class About extends Component {
     render() {
         return(
-            <div class="about">
+            <div className="about">
                 <div className="about-text-box">
                     DIV HERE
                     <h1 className="about-heading">
