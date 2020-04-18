@@ -14,7 +14,7 @@ class App extends React.Component {
       <div className="one-hundred">
         <Header/>
         <Hero/>
-        <About/>
+        {/* <About/> */}
         <div className='wrapper'>
           <Skills/>
           <Projects/>

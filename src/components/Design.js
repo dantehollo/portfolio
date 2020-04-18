@@ -8,12 +8,12 @@ const designProjects = [
     {
         title: "League Titans",
         source: leagueTitans,
-        description: "League Titans Description"
+        description: "I made this logo as my bid in a CrowdSpring project for a sports betting website. The intent was to be differnt than the other entries, the usual crest on some sort of sheild-like object made to look shiny with lots of curved edges. So I went with something angular and flat, but visually striking, evoking the power and aggression of those Greek elder gods."
     },
     {
         title: "Kerrits",
         source: kerrits,
-        description: "Kerrits Description"
+        description: "This ad was made in a competition to see design and coding ability for a job opening at the company. My coding ability wasn't up to snuff to make a responsive email ad, but if this popped in your inbox, "
     },
     {
         title: "Adventure Craft",

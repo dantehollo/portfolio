@@ -101,15 +101,12 @@ html, body {
 .full-size {
   height: 100%;
   position: relative;
-  background-image: url(https://media.giphy.com/media/v3Re0vP4CBz68/giphy.gif);
+  background-image: url(components/images/portraits/dark_me_2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 150px;
-  font-weight: 750;
+  padding: 0 25%;
+  margin-bottom: 50px;
 }
 
 .bg-image {
@@ -126,32 +123,31 @@ html, body {
   height: 100%;
 }
 
-/* About Styles */
-.about {
-  background-image: url(components/images/portraits/me.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  padding: 10%;
-}
-
-.about-text-box {
-  /* height: 25%; */
-  width: 50%;
+.hero-text-box {
   position: relative;
-  top: 20%;
-  left: 50%;
-  margin: 10px 0px 20px 0px;
+  top: 30%;
+  
 }
 
-.about-paragraph {
-  margin: 10px 0px 20px 0px;
+.hero-heading {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 7em;
+  margin-bottom: 20px;
+  letter-spacing: .125em;
+  font-style: italic;
 }
 
-/* .about-heading {
-  position: relative;
-  top: 20%;
-} */
+.hero-paragraph {
+  margin-bottom: 30px;
+}
+
+.last-line {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+}
 
 /* Skills Styles */
 .skills-row {
@@ -193,6 +189,18 @@ html, body {
 
 .proj-text-box {
   width: 50%;
+  /* display: flex;
+  justify-content: ; */
+}
+
+.proj-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.proj-description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .proj-image {
@@ -226,5 +234,7 @@ html, body {
 #proj-developer-gallery-box {
   display: none;
 }
+
+/* .proj-text- */
 
 /* Footer Styles */

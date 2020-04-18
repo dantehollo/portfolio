@@ -17,7 +17,7 @@ export default class Skills extends Component {
     render() {
         return(
             <div className='skills-container'>
-                <h1>Skills</h1>
+                <h1 className="heading">Skills</h1>
                 <div className='skills-row'>
                     <div className='image-container'>
                         <img src={react} className='skill-image' alt=""/>

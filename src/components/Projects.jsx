@@ -43,21 +43,28 @@ export default class Projects extends Component {
 
         const toggleDeveloper = (e) => {
             e.preventDefault()
-            if(this.state.developerGalleryIsHidden === true) {
-                console.log(this.state.developerGalleryIsHidden)
+            if(this.state.developerGalleryIsHidden !== this.state.designerGalleryIsHidden) {
                 document.getElementById("proj-developer-gallery-box").style.display = "block"
                 document.getElementById("proj-designer-gallery-box").style.display = "none"
-                this.setState({developerGalleryIsHidden: !this.state.developerGalleryIsHidden})
+                this.setState({developerGalleryIsHidden: !this.state.developerGalleryIsHidden,
+                    designerGalleryIsHidden: !this.state.designerGalleryIsHidden})
+                console.log("if statement developer triggered")
             }
+            console.log("developer is " + this.state.developerGalleryIsHidden)
+            console.log("designer is " + this.state.designerGalleryIsHidden)
         }
     
         const toggleDesigner = (e) => {
             e.preventDefault()
-            if(this.state.designerGalleryIsHidden === true) {
+            if(this.state.designerGalleryIsHidden !== this.state.developerGalleryIsHidden) {
                 document.getElementById("proj-designer-gallery-box").style.display = "block"
                 document.getElementById("proj-developer-gallery-box").style.display = "none"
-                this.state.designerGalleryIsHidden = !this.state.designerGalleryIsHidden
+                this.setState({developerGalleryIsHidden: !this.state.developerGalleryIsHidden,
+                    designerGalleryIsHidden: !this.state.designerGalleryIsHidden})
+                console.log("if statement for design triggered")
             }
+            console.log("developer is " + this.state.developerGalleryIsHidden)
+            console.log("designer is " + this.state.designerGalleryIsHidden)
         }
         
         return(
