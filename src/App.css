@@ -166,6 +166,7 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 25px 50px;
 }
 
 .heading {
@@ -174,6 +175,13 @@ html, body {
   font-size: 3em;
   letter-spacing: .075em;
 
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 25px 0 75px 0;
 }
 
 /* Project Gallery Styles */
@@ -242,7 +250,5 @@ html, body {
 #proj-developer-gallery-box {
   display: none;
 }
-
-/* .proj-text- */
 
 /* Footer Styles */
