@@ -168,6 +168,14 @@ html, body {
   flex-direction: column;
 }
 
+.heading {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  letter-spacing: .075em;
+
+}
+
 /* Project Gallery Styles */
 .proj-gallery-box {
   width: 100%;

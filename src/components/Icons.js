@@ -10,49 +10,60 @@ import npm from './images/Favorites/icons8-npm-100.png'
 import postgresql from './images/Favorites/icons8-postgresql-100.png'
 import python from './images/Favorites/icons8-python-100.png'
 import react from './images/Favorites/icons8-react-native-100.png'
+import javascript from './images/Favorites/icons8-javascript-100(1).png'
 
 const icon = [
     {
-        source: {illustrator}
+        source: illustrator,
+        name: "illustrator"
     },
     {
-        source: {indesign}
+        source: indesign,
+        name: "indesign"
     },
     {
-        source: {photoshop}
+        source: photoshop,
+        name: "photoshop"
     },
     {
-        source: {css3}
+        source: css3,
+        name: "css3"
     },
     {
-        source: {git}
+        source: git,
+        name: "git"
     },
     {
-        source: {html5}
+        source: html5,
+        name: "html5"
     },
     {
-        source: {npm}
+        source: npm,
+        name: "npm"
     },
     {
-        source: {postgresql}
+        source: postgresql,
+        name: "postgresql"
     },
     {
-        source: {python}
+        source: python,
+        name: "python"
     },
     {
-        source: {react}
+        source: react,
+        name: "react"
     },
     {
-        source: {javascript}
+        source: javascript,
+        name: "javascript"
     },
     {
-        source: {node}
+        source: node,
+        name: "node"
     },
     {
-        source: {node}
-    },
-    {
-        source: {mongoDB}
+        source: mongoDB,
+        name: "mongoDB"
     },
 ]
 
