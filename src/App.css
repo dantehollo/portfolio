@@ -63,6 +63,8 @@ html, body {
   z-index:100000; 
   width:100%;
   background-color: black;
+  border-bottom: 1px white solid;
+  padding-bottom: 5px 0;
 }
 
 #header-wrapper {
@@ -156,6 +158,10 @@ html, body {
   margin: 100px 0;
 }
 
+.skills-container {
+  margin: 0 0 150px 0;
+}
+
 .image-container {
   border: .5px white solid;
   border-radius: 10px;  
@@ -174,7 +180,6 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3em;
   letter-spacing: .075em;
-
 }
 
 .skill-icons {
@@ -205,8 +210,6 @@ html, body {
 
 .proj-text-box {
   width: 50%;
-  /* display: flex;
-  justify-content: ; */
 }
 
 .proj-title {
@@ -226,21 +229,23 @@ html, body {
 }
 
 .proj-nav {
-  border-bottom: 1px solid white;
-  /* padding-bottom: 5px; */
+  /* border-bottom: 1px solid white; */
 }
 
 .proj-tabs {
   display: flex;
   justify-content: center;
+  align-content: center;
+}
+
+.proj-tabs a {
+  color: white;
 }
 
 .tab-name {
-  /* margin: 0px 10px; */
   border: 1px solid white;
-  border-bottom: none;
-  /* border-radius: 7.5px; */
-  padding: 5px 15px;
+  padding: 50px 100px;
+  margin: 100px 50px;
 }
 
 #proj-designer-gallery-box {
@@ -252,3 +257,16 @@ html, body {
 }
 
 /* Footer Styles */
+.footer-disclaimer {
+  display: flex;
+  justify-content: center;
+  color: rgb(85, 85, 85);
+}
+
+.footer-disclaimer a {
+  color: rgb(85, 85, 85);
+}
+
+.footer-text {
+  font-size: .75em;
+}

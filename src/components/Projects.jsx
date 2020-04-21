@@ -69,6 +69,7 @@ export default class Projects extends Component {
         
         return(
             <div>
+                <h1 className='heading'>Projects</h1>
                 <div className="proj-nav">
                     <div className="proj-tabs">
                         <a href="#" onClick={toggleDeveloper}><h2 className="tab-name">Developer</h2></a>

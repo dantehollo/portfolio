@@ -11,6 +11,7 @@ import postgresql from './images/Favorites/icons8-postgresql-100.png'
 import python from './images/Favorites/icons8-python-100.png'
 import react from './images/Favorites/icons8-react-native-100.png'
 import javascript from './images/Favorites/icons8-javascript-100(1).png'
+import java from './images/Favorites/icons8-java-104.png'
 
 const icon = [
     {
@@ -65,6 +66,10 @@ const icon = [
         source: mongoDB,
         name: "mongoDB"
     },
+    {
+        source: java,
+        name: "java"
+    }
 ]
 
 export { icon }

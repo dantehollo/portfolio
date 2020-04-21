@@ -17,7 +17,7 @@ const developerProjects = [
         title: "World Builder",
         source: projectThree,
         description: "World Builder Description"
-    },
+    }
 ]
 
 export {developerProjects}
