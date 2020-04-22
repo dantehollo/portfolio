@@ -16,59 +16,59 @@ import java from './images/Favorites/icons8-java-104.png'
 const icon = [
     {
         source: illustrator,
-        name: "illustrator"
+        name: "Illustrator"
     },
     {
         source: indesign,
-        name: "indesign"
+        name: "Indesign"
     },
     {
         source: photoshop,
-        name: "photoshop"
+        name: "Photoshop"
     },
     {
         source: css3,
-        name: "css3"
+        name: "CSS3"
     },
     {
         source: git,
-        name: "git"
+        name: "Git"
     },
     {
         source: html5,
-        name: "html5"
+        name: "HTML5"
     },
     {
         source: npm,
-        name: "npm"
+        name: "NPM"
     },
     {
         source: postgresql,
-        name: "postgresql"
+        name: "PostgreSQL"
     },
     {
         source: python,
-        name: "python"
+        name: "Python 3"
     },
     {
         source: react,
-        name: "react"
+        name: "React"
     },
     {
         source: javascript,
-        name: "javascript"
+        name: "JavaScript"
     },
     {
         source: node,
-        name: "node"
+        name: "Node"
     },
     {
         source: mongoDB,
-        name: "mongoDB"
+        name: "MongoDB"
     },
     {
         source: java,
-        name: "java"
+        name: "Java"
     }
 ]
 

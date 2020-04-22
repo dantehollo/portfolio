@@ -44,27 +44,29 @@ export default class Projects extends Component {
         const toggleDeveloper = (e) => {
             e.preventDefault()
             if(this.state.developerGalleryIsHidden !== this.state.designerGalleryIsHidden) {
+               
+                // change display value
                 document.getElementById("proj-developer-gallery-box").style.display = "block"
                 document.getElementById("proj-designer-gallery-box").style.display = "none"
+
+                // change the value of the state
                 this.setState({developerGalleryIsHidden: !this.state.developerGalleryIsHidden,
                     designerGalleryIsHidden: !this.state.designerGalleryIsHidden})
-                console.log("if statement developer triggered")
             }
-            console.log("developer is " + this.state.developerGalleryIsHidden)
-            console.log("designer is " + this.state.designerGalleryIsHidden)
         }
     
         const toggleDesigner = (e) => {
             e.preventDefault()
             if(this.state.designerGalleryIsHidden !== this.state.developerGalleryIsHidden) {
+                
+                // change display value
                 document.getElementById("proj-designer-gallery-box").style.display = "block"
                 document.getElementById("proj-developer-gallery-box").style.display = "none"
+                
+                // change the value of the state
                 this.setState({developerGalleryIsHidden: !this.state.developerGalleryIsHidden,
                     designerGalleryIsHidden: !this.state.designerGalleryIsHidden})
-                console.log("if statement for design triggered")
             }
-            console.log("developer is " + this.state.developerGalleryIsHidden)
-            console.log("designer is " + this.state.designerGalleryIsHidden)
         }
         
         return(

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@400;500;700&family=Mitr:wght@200;300;400&display=swap');
+
 /* CSS Meyer's Reset */
 div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -41,7 +43,7 @@ a {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
   line-height: 1.15em;
 }
 
@@ -50,9 +52,19 @@ html, body {
 }
 
 /* Global */
+body {
+  animation-name: page-fade-in;
+  animation-duration: 1s;
+}
+
 .wrapper {
   width: 1250px;
   margin: 0 auto;
+}
+
+@keyframes page-fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /* Header Styles */
@@ -127,28 +139,37 @@ html, body {
 
 .hero-text-box {
   position: relative;
-  top: 30%;
-  
+  top: 32.5%;
 }
 
 .hero-heading {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Permanent Marker", sans-serif;
   font-weight: 600;
-  font-size: 7em;
+  font-size: 1000%;
   margin-bottom: 20px;
-  letter-spacing: .125em;
   font-style: italic;
+  width: 95%;
 }
 
-.hero-paragraph {
+.hero-subhead {
   margin-bottom: 30px;
+  font-family: "Mitr", sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+  width: 95%;
 }
 
 .last-line {
   text-align: center;
   font-size: 1.2em;
-  font-weight: 700;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.arrow {
+  font-weight: 500;
+  font-size: 3em;
 }
 
 /* Skills Styles */
@@ -177,7 +198,7 @@ html, body {
 
 .heading {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
   font-size: 3em;
   letter-spacing: .075em;
 }
@@ -205,7 +226,10 @@ html, body {
 .proj-image-box {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 40%;
+  margin: 0 5%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .proj-text-box {
@@ -228,14 +252,11 @@ html, body {
   object-fit: contain;
 }
 
-.proj-nav {
-  /* border-bottom: 1px solid white; */
-}
-
 .proj-tabs {
   display: flex;
   justify-content: center;
   align-content: center;
+
 }
 
 .proj-tabs a {
@@ -244,16 +265,45 @@ html, body {
 
 .tab-name {
   border: 1px solid white;
+  border-radius: 10px;
   padding: 50px 100px;
   margin: 100px 50px;
+  font-family: "Mitr", sans-serif;
+  font-size: 200%;
+  background-color: rgba( 0, 0, 0, 0);
 }
+
+/* .tab-name:hover {
+  animation-name: radial-light;
+  animation-duration: .5s;
+} */
 
 #proj-designer-gallery-box {
   display: block;
+  animation-name: slide-in;
+  animation-duration: .5s;
 }
 
 #proj-developer-gallery-box {
   display: none;
+  animation-name: slide-in;
+  animation-duration: .5s;
+}
+
+@keyframes slide-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slide-out {
+  0% {opacity: 1; left: 500; top: 0;}
+  100% {opacity: 0; left: 0; top: 0;}
+}
+
+@keyframes radial-light {
+  0% {box-shadow: 0 0 0 0 #000;}
+  100% {box-shadow: 0 0 40px 20px #fff;}
+
 }
 
 /* Footer Styles */
