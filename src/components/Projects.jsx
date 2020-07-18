@@ -37,6 +37,14 @@ export default class Projects extends Component {
                 <div className="proj-text-box">
                     <h2 className="proj-title">{project.title}</h2>
                     <p className="proj-description">{project.description}</p>
+                    <div>
+                        <a href={project.repoLink}>
+                            <p className="proj-description">Github</p>
+                        </a>
+                        <a href={project.herokuLink}>
+                            <p className="proj-description">Live Site</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         })
