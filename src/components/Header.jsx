@@ -5,27 +5,37 @@ import logoWhite from './images/logos/logos/personal-logo-white.png'
 
 
 export default class Header extends Component {
-
+    // toggle nav menu
+    toggleNav = (e) => {
+        e.preventDefault()
+        const displayValue = document.getElementById("myLinks")
+        if(displayValue.style.display === "block") {
+            displayValue.style.display = "none"
+            // console.log("tripped first")
+        } else {
+            displayValue.style.display = "block"
+            // console.log("tripped second")
+        }
+    }
     render(){
         return(
-            <div className="header">
-                <header id='header-wrapper'>
-                    <div className='logo-container'>
-                        <img src={logoWhite} className='logo-image' alt=""/>
-                    </div>
-                    <nav className='nav-container'>
-                        <div className="nav-links">
-                            <a href="https://github.com/dantehollo">
-                                <img src={github}  alt='octocat' href='https://github.com/dantehollo?tab=repositories' className='nav-image'/>
-                            </a>
-                        </div>
-                        <div className="nav-links">
-                            <a href="https://www.linkedin.com/in/matthew-caravaggio/">
-                                <img src={linkedin} href='https://www.linkedin.com/in/matthew-caravaggio/' alt='linkedin' className='nav-image'/>
-                            </a>
-                        </div>
-                    </nav>
-                </header>
+            <div className="topnav">
+                <a href="#home" className="active">
+                    <img src={logoWhite} alt="Matthew's Logo" className="logo-image"/>
+                </a>
+                <div id="myLinks">
+                    <a href="https://github.com/dantehollo">
+                        <img className="" src={github} alt="octocat" className="logo-image"/>
+                    </a>
+                    <a href="https://github.com/dantehollo">
+                        <img src={linkedin} alt="linkedin" className="logo-image"/>
+                    </a>
+                </div>
+                <a className="icon" onClick={this.toggleNav}>
+                    <div className="hamburger"/>
+                    <div className="hamburger"/>
+                    <div className="hamburger"/>
+                </a>
             </div>
         )
     }

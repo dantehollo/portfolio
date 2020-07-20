@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(20, 20 ,20);
   line-height: 1;
   color: white;
 }
@@ -51,4 +51,72 @@ html, body {
   height: 100%;
 }
 
-/* Global */
+/* HEADER */
+
+.topnav {
+  overflow: hidden;
+  background-color: #111;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #111;
+  color: white;
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+.logo-image {
+  width: 50px;
+}
+
+/* HERO */
+
+.sphere {
+  padding-bottom: 0vw;
+  width: 75vw;
+  height: 75vw;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 auto;
+  background-image: url(https://i.gifer.com/Vux1.gif);
+}
+
+/* SKILLS */
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* PROJECTS */
+
+.proj-image {
+  width: 300px;
+}

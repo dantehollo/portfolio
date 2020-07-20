@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default class Hero extends Component {
   render(){
     return(
-      <div className="full-size">
+      <section className="full-size">
+        <div className="sphere"/>
         <div className="hero-text-box">
           <h1 className="hero-heading">
             Welcome
@@ -18,7 +19,7 @@ export default class Hero extends Component {
             Only now, I make them with code.
           </h2>
         </div>
-      </div>
+      </section>
     )
   }
 }
