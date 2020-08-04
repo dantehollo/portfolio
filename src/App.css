@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@400;500;700&family=Mitr:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap');
 
 /* CSS Meyer's Reset */
 div, span, applet, object, iframe,
@@ -98,14 +99,33 @@ html, body {
 
 /* HERO */
 
-.sphere {
-  padding-bottom: 0vw;
-  width: 75vw;
-  height: 75vw;
-  border-radius: 50%;
-  background-color: #ddd;
-  margin: 0 auto;
-  background-image: url(https://i.gifer.com/Vux1.gif);
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(https://i.gifer.com/A6m9.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center -175px;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Audiowide", sans-serif;
+  padding: 0 10px 0 10px
+}
+
+#hero-heading {
+  font-size: 3rem;
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 30px;
+}
+
+.hero-text-box  h2 {
+  margin: 30px 0 10px 0;
+}
+
+#last-line {
+  font-size: 1.25rem;
 }
 
 /* SKILLS */
@@ -115,8 +135,115 @@ html, body {
   flex-wrap: wrap;
 }
 
-/* PROJECTS */
+
+/* Project Gallery Styles */
+.proj-gallery-box {
+  width: 100%;
+}
+
+.proj-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 20px 100px 20px;  
+}
+
+.proj-image-box {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0 5%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.proj-text-box {
+  width: 50%;
+}
+
+.proj-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.proj-description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-wrap: break-word;
+}
 
 .proj-image {
+  height: 300px;
   width: 300px;
+  object-fit: contain;
+}
+
+.proj-tabs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.proj-tabs a {
+  color: white;
+}
+
+.tab-name {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 50px 100px;
+  margin: 100px 50px;
+  font-family: "Mitr", sans-serif;
+  font-size: 200%;
+  background-color: rgba( 0, 0, 0, 0);
+}
+
+/* .tab-name:hover {
+  animation-name: radial-light;
+  animation-duration: .5s;
+} */
+
+#proj-designer-gallery-box {
+  display: block;
+  animation-name: slide-in;
+  animation-duration: .5s;
+}
+
+#proj-developer-gallery-box {
+  display: none;
+  animation-name: slide-in;
+  animation-duration: .5s;
+}
+
+@keyframes slide-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slide-out {
+  0% {opacity: 1; left: 500; top: 0;}
+  100% {opacity: 0; left: 0; top: 0;}
+}
+
+@keyframes radial-light {
+  0% {box-shadow: 0 0 0 0 #000;}
+  100% {box-shadow: 0 0 40px 20px #fff;}
+
+}
+
+/* Footer Styles */
+.footer-disclaimer {
+  display: flex;
+  justify-content: center;
+  color: rgb(85, 85, 85);
+}
+
+.footer-disclaimer a {
+  color: rgb(85, 85, 85);
+}
+
+.footer-text {
+  font-size: .75em;
 }
