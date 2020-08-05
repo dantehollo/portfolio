@@ -135,6 +135,37 @@ html, body {
   flex-wrap: wrap;
 }
 
+/* Skills Styles */
+.skills-container {
+  margin: -100px 0 150px 0;
+}
+
+.image-container {
+  border: .5px white solid;
+  border-radius: 10px;  
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px 10px;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  letter-spacing: .075em;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 25px 0 75px 0;
+}
 
 /* Project Gallery Styles */
 .proj-gallery-box {
@@ -142,8 +173,9 @@ html, body {
 }
 
 .proj-container {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 30px 20px 100px 20px;  
@@ -153,13 +185,15 @@ html, body {
   display: flex;
   justify-content: center;
   width: 40%;
-  margin: 0 5%;
+  margin: 0 5% 25px 5%;
   background-color: white;
   border-radius: 10px;
 }
 
 .proj-text-box {
-  width: 50%;
+  text-align: center;
+  overflow-wrap: break-word;
+  /* width: 50%; */
 }
 
 .proj-title {
@@ -174,13 +208,13 @@ html, body {
 }
 
 .proj-image {
-  height: 300px;
   width: 300px;
   object-fit: contain;
 }
 
 .proj-tabs {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
 
@@ -188,13 +222,14 @@ html, body {
 
 .proj-tabs a {
   color: white;
+  text-align: center;
 }
 
 .tab-name {
   border: 1px solid white;
   border-radius: 10px;
-  padding: 50px 100px;
-  margin: 100px 50px;
+  padding: 25px 10px;
+  margin: 25px 50px;
   font-family: "Mitr", sans-serif;
   font-size: 200%;
   background-color: rgba( 0, 0, 0, 0);
