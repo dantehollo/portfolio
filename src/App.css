@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  background-color: rgb(20, 20 ,20);
+  background-color: rgb(0, 0 ,0);
   line-height: 1;
   color: white;
 }
@@ -62,6 +62,13 @@ html, body {
 
 .topnav #myLinks {
   display: none;
+  animation-name: nav-fade;
+  animation-duration: .5s;
+}
+
+@keyframes nav-fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .topnav a {
@@ -74,6 +81,7 @@ html, body {
 
 .topnav a.icon {
   float: right;
+  margin: 7.5px 0 0 0;
 }
 
 .topnav a:hover {
@@ -173,7 +181,6 @@ html, body {
 }
 
 .proj-container {
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -184,7 +191,6 @@ html, body {
 .proj-image-box {
   display: flex;
   justify-content: center;
-  width: 40%;
   margin: 0 5% 25px 5%;
   background-color: white;
   border-radius: 10px;
@@ -257,15 +263,82 @@ html, body {
   100% {opacity: 1;}
 }
 
-@keyframes slide-out {
-  0% {opacity: 1; left: 500; top: 0;}
-  100% {opacity: 0; left: 0; top: 0;}
-}
-
 @keyframes radial-light {
   0% {box-shadow: 0 0 0 0 #000;}
   100% {box-shadow: 0 0 40px 20px #fff;}
+}
 
+@media screen and (min-width: 800px) {
+  .proj-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px 100px 20px;  
+  }
+  
+  .proj-image-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .proj-text-box {
+    width: 50%;
+  }
+  
+  .proj-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+  }
+  
+  .proj-description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-wrap: break-word;
+  }
+  
+  .proj-image {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+  }
+  
+  .proj-tabs {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  
+  }
+  
+  .proj-tabs a {
+    color: white;
+  }
+  
+  .tab-name {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 50px 100px;
+    margin: 100px 50px;
+    font-family: "Mitr", sans-serif;
+    font-size: 200%;
+    background-color: rgba( 0, 0, 0, 0);
+  }
+  
+  #proj-designer-gallery-box {
+    display: block;
+    animation-name: slide-in;
+    animation-duration: .5s;
+  }
+  
+  #proj-developer-gallery-box {
+    display: none;
+    animation-name: slide-in;
+    animation-duration: .5s;
+  }
 }
 
 /* Footer Styles */
@@ -273,6 +346,7 @@ html, body {
   display: flex;
   justify-content: center;
   color: rgb(85, 85, 85);
+  padding: 0 2.5%;
 }
 
 .footer-disclaimer a {

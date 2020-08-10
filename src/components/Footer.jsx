@@ -4,7 +4,7 @@ export default class Footer extends Component {
     blankSpace = " "
     render() {
         return (
-            <div className="footer-disclaimer">
+            <footer className="footer-disclaimer">
                 <p className="footer-text">
                     <a target="_blank" href="/icons/set/adobe-indesign">
                         Adobe Indesign
@@ -19,7 +19,7 @@ export default class Footer extends Component {
                     </a>
                     Site design by Matthew Caravaggio. All rights reseverd. Copyright 2020 &#169;. 
                 </p>
-            </div>
+            </footer>
         )
     }
 }

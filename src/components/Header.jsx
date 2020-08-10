@@ -11,10 +11,8 @@ export default class Header extends Component {
         const displayValue = document.getElementById("myLinks")
         if(displayValue.style.display === "block") {
             displayValue.style.display = "none"
-            // console.log("tripped first")
         } else {
             displayValue.style.display = "block"
-            // console.log("tripped second")
         }
     }
     render(){
