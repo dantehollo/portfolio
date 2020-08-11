@@ -178,7 +178,7 @@ html, body {
 
 .heading {
   text-align: center;
-  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+  font-family: "Audiowide", Arial, sans-serif;
   font-size: 3em;
   letter-spacing: .075em;
 }
@@ -206,13 +206,6 @@ html, body {
     align-items: center;
     flex-direction: column;
     margin: 25px 50px;
-  }
-  
-  .heading {
-    text-align: center;
-    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
-    font-size: 3em;
-    letter-spacing: .075em;
   }
   
   .skill-icons {
@@ -259,13 +252,24 @@ html, body {
 }
 
 .proj-description {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   overflow-wrap: break-word;
+  margin-bottom: 10px;
 }
 
 .proj-image {
   width: 300px;
   object-fit: contain;
+}
+
+.proj-link {
+  color: white;
+  transition: text-decoration color .5s;
+}
+
+.proj-link:hover {
+  text-decoration: underline #fff;
+  color: #fff;
 }
 
 .proj-tabs {
@@ -305,11 +309,6 @@ html, body {
 @keyframes slide-in {
   0% {opacity: 0;}
   100% {opacity: 1;}
-}
-
-@keyframes radial-light {
-  0% {box-shadow: 0 0 0 0 #000;}
-  100% {box-shadow: 0 0 40px 20px #fff;}
 }
 
 @media screen and (min-width: 800px) {

@@ -38,11 +38,11 @@ export default class Projects extends Component {
                     <h2 className="proj-title">{project.title}</h2>
                     <p className="proj-description">{project.description}</p>
                     <div>
-                        <a href={project.repoLink}>
-                            <p className="proj-description">Github</p>
+                        <a href={project.repoLink} className="proj-link">
+                            <p>Github</p>
                         </a>
-                        <a href={project.herokuLink}>
-                            <p className="proj-description">Live Site</p>
+                        <a href={project.herokuLink} className="proj-link">
+                            <p>Live Site</p>
                         </a>
                     </div>
                 </div>
