@@ -13,11 +13,11 @@ class App extends React.Component {
       <div className="one-hundred">
         <Header/>
         <Hero/>
-        <div>
+        <div className="center">
           <Skills/>
           <Projects/>
-          <Footer/>
         </div>
+        <Footer/>
       </div>
     )
   }

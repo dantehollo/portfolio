@@ -105,6 +105,16 @@ html, body {
   width: 50px;
 }
 
+@media screen and (min-width: 1000px) {
+  .topnav{
+    padding: 0 10vw;
+  }
+}
+
+#root {
+  margin: 0 auto;
+}
+
 /* HERO */
 
 .hero {
@@ -112,10 +122,10 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(https://i.gifer.com/A6m9.gif);
+  background-image: url(https://i.gifer.com/XTpm.gif);
   background-position: center;
   background-repeat: no-repeat;
-  background-position: center -175px;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   font-family: "Audiowide", sans-serif;
@@ -128,7 +138,7 @@ html, body {
   margin-bottom: 30px;
 }
 
-.hero-text-box  h2 {
+.hero-text-box h2 {
   margin: 30px 0 10px 0;
 }
 
@@ -136,8 +146,13 @@ html, body {
   font-size: 1.25rem;
 }
 
-/* SKILLS */
+@media screen and (min-width: 800px) {
+  #hero-heading {
+    font-size: 7.5vw;
+  }
+}
 
+/* SKILLS */
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
@@ -145,7 +160,7 @@ html, body {
 
 /* Skills Styles */
 .skills-container {
-  margin: -100px 0 150px 0;
+  margin: 50px 0 150px 0;
 }
 
 .image-container {
@@ -175,6 +190,39 @@ html, body {
   margin: 25px 0 75px 0;
 }
 
+@media screen and (min-width: 800px) {
+  .skills-container {
+    
+  }
+  
+  .image-container {
+    border: .5px white solid;
+    border-radius: 10px;  
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 50px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    letter-spacing: .075em;
+  }
+  
+  .skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px 0 75px 0;
+  }
+}
+
 /* Project Gallery Styles */
 .proj-gallery-box {
   width: 100%;
@@ -197,9 +245,11 @@ html, body {
 }
 
 .proj-text-box {
-  text-align: center;
   overflow-wrap: break-word;
-  /* width: 50%; */
+}
+
+.proj-text-box h2 {
+  text-align: center;
 }
 
 .proj-title {
@@ -223,7 +273,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
 }
 
 .proj-tabs a {
@@ -240,11 +289,6 @@ html, body {
   font-size: 200%;
   background-color: rgba( 0, 0, 0, 0);
 }
-
-/* .tab-name:hover {
-  animation-name: radial-light;
-  animation-duration: .5s;
-} */
 
 #proj-designer-gallery-box {
   display: block;
@@ -270,7 +314,6 @@ html, body {
 
 @media screen and (min-width: 800px) {
   .proj-container {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -284,10 +327,6 @@ html, body {
     margin: 0 5%;
     background-color: white;
     border-radius: 10px;
-  }
-  
-  .proj-text-box {
-    width: 50%;
   }
   
   .proj-title {
@@ -304,14 +343,15 @@ html, body {
   .proj-image {
     height: 300px;
     width: 300px;
+    border-radius: 10px;
     object-fit: contain;
   }
   
   .proj-tabs {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
-  
   }
   
   .proj-tabs a {
@@ -338,6 +378,12 @@ html, body {
     display: none;
     animation-name: slide-in;
     animation-duration: .5s;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #project {
+    margin: 0 10vw;
   }
 }
 

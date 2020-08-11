@@ -78,7 +78,7 @@ export default class Projects extends Component {
         }
         
         return(
-            <div>
+            <section id="project">
                 <h1 className='heading'>Projects</h1>
                 <div className="proj-nav">
                     <div className="proj-tabs">
@@ -94,7 +94,7 @@ export default class Projects extends Component {
                         {developer}
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

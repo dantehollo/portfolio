@@ -14,13 +14,12 @@ export default class Skills extends Component {
             })
 
         return(
-            <div className='skills-container'>
+            <section className='skills-container'>
                 <h1 className='heading'>Skills</h1>
                 <div className='skill-icons'>
                     {iconsList}
                 </div>
-                
-            </div>
+            </section>
         )
     }
 }
