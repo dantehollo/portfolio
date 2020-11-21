@@ -25,7 +25,7 @@ export default class Header extends Component {
                     <a href="https://github.com/dantehollo">
                         <img className="" src={github} alt="octocat" className="logo-image"/>
                     </a>
-                    <a href="https://github.com/dantehollo">
+                    <a href="https://www.linkedin.com/in/matthew-caravaggio/">
                         <img src={linkedin} alt="linkedin" className="logo-image"/>
                     </a>
                 </div>
