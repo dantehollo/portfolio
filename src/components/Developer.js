@@ -3,11 +3,13 @@ import projectTwo from './images/project-images/Developer/GuestBookImg.jpg'
 import projectThree from './images/project-images/Developer/project2.png'
 
 const developerProjects = [
-    // {
-    //     title: "React Black Jack",
-    //     source: projectOne,
-    //     description: "Black Jack made purely in React with CSS animations. Enjoy the classic casino staple with a blast of weeby goodness."
-    // },
+    {
+        title: "Legends of Al-Yehn",
+        source: projectOne,
+        description: "This is a demo visual novel created in React. It plays like a choose your own adventure game, only instead of flipping through pages to get to the next part of the story, each decision you make will set you down a new path automatically. It takes about thirty minutes to read through from start to end, with the possiblility of eight different endings.",
+        repoLink: "https://github.com/dantehollo/choose-your-own-adventure",
+        herokuLink: "https://legends-of-alyehn.herokuapp.com/"
+    },
     {
         title: "Guest Log",
         source: projectTwo,
